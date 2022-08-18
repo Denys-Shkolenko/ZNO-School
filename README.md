@@ -1,2 +1,2 @@
 # ZNO-School
-Web-platform for online ZNO school
+Web-platform for online ZNO-school
