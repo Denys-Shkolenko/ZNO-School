@@ -1,0 +1,233 @@
+#teachers {
+    background: #FFE49A;
+}
+
+#teachers .teachers-slider .slick-arrow {
+    margin: -60px 0;
+    background-color: #FFE49A;
+}
+
+#teachers .teachers-slider .slick-arrow:active {
+    background-color: #F4A938;
+}
+
+#teachers .teachers-slider .item {
+    position: relative;
+    margin: 0 15px;
+    height: 530px;
+    perspective: 1000px; /* 3D effect */
+}
+
+#teachers .teachers-slider .item .rectangle {
+    position: relative;
+    height: 470px;
+    width: 100%;
+
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+#teachers .teachers-slider .item .rectangle.rectangle-1 {
+    background: #E79797;
+}
+
+#teachers .teachers-slider .item .rectangle.rectangle-2 {
+    background: #E0806B;
+}
+
+#teachers .teachers-slider .item .rectangle.rectangle-3 {
+    background: #C9A268;
+}
+
+#teachers .teachers-slider .item:hover .rectangle {
+    transform: rotateY(180deg);
+}
+
+#teachers .teachers-slider .item .rectangle .front,
+#teachers .teachers-slider .item .rectangle .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+#teachers .teachers-slider .item .rectangle .back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#teachers .teachers-slider .item .rectangle .front .photo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#teachers .teachers-slider .item .rectangle .front .photo img {
+    height: 490px;
+    width: auto;
+}
+
+#teachers .teachers-slider .item .rectangle .front .read-more-icon,
+#teachers .teachers-slider .item .rectangle .back .person-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 50%;
+}
+
+#teachers .teachers-slider .item .rectangle .back .person-icon {
+    display: none;
+}
+
+#teachers .teachers-slider .item .rectangle .front .name,
+#teachers .teachers-slider .item .rectangle .back .instagram-link {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 63px;
+
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    background: #000000;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#teachers .teachers-slider .item .rectangle .back .name {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+#teachers .teachers-slider .item .rectangle .back .about-teacher {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#teachers .teachers-slider .item .rectangle .back .about-teacher li {
+    margin-bottom: 15px;
+}
+
+#teachers .teachers-slider .item .rectangle .back .instagram-link:hover,
+#teachers .teachers-slider .item .rectangle .front .name:hover {
+    cursor: pointer;
+}
+
+#teachers .teachers-slider .item .subject {
+    position: absolute;
+    width: max-content;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+}
+
+@media (max-width: 991px) {
+    #teachers .teachers-slider .item .rectangle .back {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #teachers .teachers-slider .item:hover .rectangle {
+        transform: none;
+    }
+
+    #teachers .teachers-slider .item .rectangle.active {
+        transform: rotateY(180deg);
+    }
+
+    #teachers .teachers-slider .item .rectangle .back .person-icon {
+        display: block;
+    }
+
+    #teachers .teachers-slider .item .rectangle .front .read-more-icon:hover,
+    #teachers .teachers-slider .item .rectangle .back .person-icon:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 475px) {
+    #teachers .teachers-slider .item {
+        height: 380px;
+    }
+
+    #teachers .teachers-slider .item .rectangle {
+        height: 340px;
+    }
+
+    #teachers .teachers-slider .item .rectangle .front .photo img {
+        height: 350px;
+        width: auto;
+    }
+
+    #teachers .teachers-slider .item .rectangle .back .name {
+        margin-bottom: 2px;
+        margin-top: 3px;
+        font-size: 16px;
+    }
+
+    #teachers .teachers-slider .item .rectangle .back {
+        padding: 20px;
+    }
+
+    #teachers .teachers-slider .item .rectangle .back .about-teacher {
+        font-size: 12px;
+        margin-left: 16px;
+    }
+
+    #teachers .teachers-slider .item .rectangle .back .about-teacher li {
+        margin-bottom: 10px;
+    }
+
+    #teachers .teachers-slider .item .rectangle .front .name,
+    #teachers .teachers-slider .item .rectangle .back .instagram-link {
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        bottom: -20px;
+    }
+
+    #teachers .teachers-slider .item .subject {
+        font-size: 14px;
+        bottom: -5px;
+    }
+
+    #teachers .teachers-slider .slick-arrow {
+        margin: -50px 0;
+        background-color: #FFE49A;
+        opacity: 50%;
+    }
+}

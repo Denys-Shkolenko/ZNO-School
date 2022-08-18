@@ -1,11 +1,17 @@
-.home {
-    position: relative;
-    height: 100vh;
-
+#home {
     background: linear-gradient(128.22deg, #F4CB38 10.36%, #F4A938 84.38%);
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.home .header {
+#home .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#home .header {
     position: relative;
     margin-top: 30px;
     height: 46px;
@@ -14,7 +20,7 @@
     justify-content: space-between;
 }
 
-.home .header .logo-and-name {
+#home .header .logo-and-name {
     position: relative;
     height: 46px;
     width: 185px;
@@ -27,14 +33,14 @@
     transition: background-position 0.5s ease-in-out;
 }
 
-.home .header .logo-and-name:hover {
+#home .header .logo-and-name:hover {
     background-position: left;
 }
 
-.home .header .logo-and-name .logo {
+#home .header .logo-and-name .logo {
     position: absolute;
 }
-.home .header .logo-and-name .name {
+#home .header .logo-and-name .name {
     position: absolute;
     left: 56px;
     top: 50%;
@@ -52,11 +58,11 @@
     color: #000000;
 }
 
-.home .header .header-burger {
+#home .header .header-burger {
     display: none;
 }
 
-.home .header .menu-list {
+#home .header .menu-list {
     position: relative;
     height: 30px;
     top: 50%;
@@ -72,15 +78,15 @@
     color: #000000;
 }
 
-.home .header .menu-list a:hover {
+#home .header .menu-list a:hover {
     border-bottom: 1px solid #000000;
 }
 
-.home .header .menu-list .line {
+#home .header .menu-list .line {
     display: none;
 }
 
-.home .header .authorization {
+#home .header .authorization {
     position: relative;
 
     font-weight: 400;
@@ -93,15 +99,15 @@
     color: #000000;
 }
 
-.home .header .authorization .sign-up {
+#home .header .authorization .sign-up {
     position: relative;
 }
 
-.home .header .authorization .sign-up a:hover {
+#home .header .authorization .sign-up:hover {
     border-bottom: 1px solid #000000;
 }
 
-.home .header .authorization .log-in {
+#home .header .authorization .log-in {
     position: relative;
     width: 100px;
     height: 30px;
@@ -117,27 +123,28 @@
     border-radius: 10px;
 }
 
-.home .header .authorization .log-in:hover {
+#home .header .authorization .log-in:hover {
     color: #FFFFFF;
     background: #000000;
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
 }
 
-.home .header .shadow-background {
+#home .header .shadow-background {
     display: none;
 }
 
-.welcome-content {
+#home .welcome-content {
     position: relative;
+    margin-bottom: 100px;
 }
 
-.welcome-content .team_photo img {
+#home .welcome-content .team_photo img {
     position: relative;
     width: 100%;
     z-index: 2;
 }
 
-.welcome-content .blur-ellipse {
+#home .welcome-content .blur-ellipse {
     position: absolute;
     width: 100%;
     height: 400px;
@@ -152,7 +159,7 @@
     filter: blur(250px);
 }
 
-.welcome-content .rectangle {
+#home .welcome-content .rectangle {
     position: absolute;
     width: 80%;
     height: 180px;
@@ -165,7 +172,7 @@
     border-radius: 20px;
 }
 
-.welcome-content .rectangle .name {
+#home .welcome-content .rectangle .name {
     position: absolute;
     top: 53px;
     left: 60px;
@@ -178,7 +185,7 @@
     color: #000000;
 }
 
-.welcome-content .rectangle .description {
+#home .welcome-content .rectangle .description {
     position: absolute;
     bottom: 53px;
     left: 60px;
@@ -191,7 +198,7 @@
     color: #000000;
 }
 
-.welcome-content .rectangle .main-btn {
+#home .welcome-content .rectangle .main-btn {
     position: absolute;
     right: 60px;
     width: 300px;
@@ -209,84 +216,84 @@
     color: #FFFFFF;
 
     background: #F44F38;
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
 
-.welcome-content .rectangle .main-btn:hover {
+#home .welcome-content .rectangle .main-btn:hover {
     background: #F43838;
 }
 
 @media (max-width: 1399px) {
-    .welcome-content .rectangle .name {
+    #home .welcome-content .rectangle .name {
         left: 40px;
     }
 
-    .welcome-content .rectangle .description {
+    #home .welcome-content .rectangle .description {
         left: 40px;
     }
 
-    .welcome-content .rectangle .main-btn {
+    #home .welcome-content .rectangle .main-btn {
         right: 40px;
     }
 }
 
 @media (max-width: 1199px) {
-    .home .header {
+    #home .header {
         height: 30px;
     }
 
-    .home .header .logo-and-name {
+    #home .header .logo-and-name {
         height: 30px;
         width: 145px;
     }
 
-    .home .header .logo-and-name .logo img {
+    #home .header .logo-and-name .logo img {
         display: block;
         height: 30px;
     }
-    .home .header .logo-and-name .name {
+    #home .header .logo-and-name .name {
         left: 40px;
         height: 16px;
 
         font-size: 16px;
     }
 
-    .home .header .menu-list {
+    #home .header .menu-list {
         height: 20px;
 
         gap: 15px;
         font-size: 14px;
     }
 
-    .home .header .authorization {
+    #home .header .authorization {
         gap: 15px;
         font-size: 14px;
     }
 
-    .home .header .authorization .log-in {
+    #home .header .authorization .log-in {
         width: 90px;
         height: 28px;
     }
 
-    .welcome-content .rectangle {
+    #home .welcome-content .rectangle {
         height: 150px;
         bottom: -50px;
     }
 
-    .welcome-content .rectangle .name {
+    #home .welcome-content .rectangle .name {
         top: 46px;
         left: 30px;
         font-size: 26px;
     }
 
-    .welcome-content .rectangle .description {
+    #home .welcome-content .rectangle .description {
         bottom: 46px;
         left: 30px;
         font-size: 16px;
     }
 
-    .welcome-content .rectangle .main-btn {
+    #home .welcome-content .rectangle .main-btn {
         width: 260px;
         height: 50px;
 
@@ -296,15 +303,11 @@
 }
 
 @media (max-width: 991px) {
-    /*body.lock {*/
-    /*    overflow: hidden;*/
-    /*}*/
-
-    .home .header .logo-and-name:hover {
+    #home .header .logo-and-name:hover {
         background-position: right;
     }
 
-    .home .header .shadow-background {
+    #home .header .shadow-background {
         position: fixed;
         margin: 0;
         padding: 0;
@@ -317,11 +320,11 @@
         background: rgba(0, 0, 0, 0.7);
     }
 
-    .home .header .shadow-background.active {
+    #home .header .shadow-background.active {
         display: block;
     }
 
-    .home .header .header-burger {
+    #home .header .header-burger {
         display: block;
         position: absolute;
         top: 50%;
@@ -333,7 +336,7 @@
         cursor: pointer;
     }
 
-    .home .header .header-burger span {
+    #home .header .header-burger span {
         position: absolute;
         background-color: #000000;
         left: 0;
@@ -343,8 +346,8 @@
         transition: all 0.3s ease 0s;
     }
 
-    .home .header .header-burger:before,
-    .home .header .header-burger:after {
+    #home .header .header-burger:before,
+    #home .header .header-burger:after {
         content: '';
         background-color: #000000;
         position: absolute;
@@ -354,29 +357,29 @@
         transition: all 0.3s ease 0s;
     }
 
-    .home .header .header-burger:before {
+    #home .header .header-burger:before {
         top: 0;
     }
 
-    .home .header .header-burger:after {
+    #home .header .header-burger:after {
         bottom: 0;
     }
 
-    .home .header .header-burger.active span {
+    #home .header .header-burger.active span {
         transform: scale(0);
     }
 
-    .home .header .header-burger.active:before {
+    #home .header .header-burger.active:before {
         transform: rotate(45deg);
         top: 9px;
     }
 
-    .home .header .header-burger.active:after {
+    #home .header .header-burger.active:after {
         transform: rotate(-45deg);
         bottom: 9px;
     }
 
-    .home .header .menu-list {
+    #home .header .menu-list {
         position: absolute;
         top: -300px;
         right: -10px;
@@ -387,20 +390,20 @@
         background-color: #FFE49A;
         border-radius: 20px;
         justify-content: flex-start;
-        gap: 0px;
+        gap: 0;
         z-index: 6;
         transition: all 0.3s ease 0s;
 
         flex-direction: column;
     }
 
-    .home .header .menu-list a:hover {
+    #home .header .menu-list a:hover {
         border-bottom: none;
     }
 
-    .home .header .menu-list li,
-    .home .header .authorization .sign-up,
-    .home .header .authorization .log-in {
+    #home .header .menu-list li,
+    #home .header .authorization .sign-up,
+    #home .header .authorization .log-in {
         width: 200px;
         height: 35px;
         border-radius: 10px;
@@ -411,19 +414,19 @@
         cursor: pointer;
     }
 
-    .home .header .authorization .log-in {
+    #home .header .authorization .log-in {
         border: none;
     }
 
-    .home .header .menu-list li:hover {
+    #home .header .menu-list li:hover {
         background: #F4D57F;
     }
 
-    .home .header .menu-list.active {
+    #home .header .menu-list.active {
         top: -10px;
     }
 
-    .home .header .menu-list .line {
+    #home .header .menu-list .line {
         display: block;
         position: absolute;
         width: 150px;
@@ -436,7 +439,7 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-    .home .header .authorization {
+    #home .header .authorization {
         position: absolute;
         top: -400px;
         right: -10px;
@@ -446,7 +449,7 @@
         padding-top: 56px;
         padding-bottom: 35px;
         display: flex;
-        gap: 0px;
+        gap: 0;
         justify-content: flex-start;
         background-color: #FFE49A;
         border-radius: 20px;
@@ -456,37 +459,42 @@
         flex-direction: column;
     }
 
-    .home .header .authorization .sign-up a:hover {
+    #home .header .authorization .sign-up a:hover {
         border-bottom: none;
     }
 
-    .home .header .authorization .sign-up:hover {
+    #home .header .authorization .sign-up:hover {
         background: #F4D57F;
+        border-bottom: none;
     }
 
-    .home .header .authorization .log-in:hover {
+    #home .header .authorization .log-in:hover {
         color: #000000;
         background: #F4D57F;
         box-shadow: none;
     }
 
-    .home .header .authorization.active {
+    #home .header .authorization.active {
         top: 165px;
     }
 
-    .welcome-content .rectangle {
+    #home .welcome-content {
+        margin-bottom: 180px;
+    }
+
+    #home .welcome-content .rectangle {
         height: 200px;
         bottom: -120px;
     }
 
-    .welcome-content .rectangle .name {
+    #home .welcome-content .rectangle .name {
         top: 37px;
         width: max-content;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    .welcome-content .rectangle .description {
+    #home .welcome-content .rectangle .description {
         top: 75px;
         width: max-content;
         height: fit-content;
@@ -494,7 +502,7 @@
         transform: translateX(-50%);
     }
 
-    .welcome-content .rectangle .main-btn {
+    #home .welcome-content .rectangle .main-btn {
         top: unset;
         left: 50%;
         transform: translateX(-50%);
@@ -503,59 +511,63 @@
 }
 
 @media (max-width: 767px) {
-    .welcome-content .rectangle {
+    #home .welcome-content .rectangle {
         width: 90%;
         bottom: -140px;
     }
 }
 
 @media (max-width: 475px) {
-    .home .header {
+    #home .header {
         height: 26px;
     }
 
-    .home .header .logo-and-name {
+    #home .header .logo-and-name {
         height: 26px;
         width: 121px;
     }
 
-    .home .header .logo-and-name .logo img {
+    #home .header .logo-and-name .logo img {
         display: block;
         height: 26px;
     }
-    .home .header .logo-and-name .name {
+    #home .header .logo-and-name .name {
         left: 32px;
         height: 16px;
 
         font-size: 14px;
     }
 
-    .home .header .menu-list {
+    #home .header .menu-list {
         width: 100vw;
     }
 
-    .home .header .authorization {
+    #home .header .authorization {
         width: 100vw;
     }
 
-    .welcome-content .rectangle {
+    #home .welcome-content {
+        margin-bottom: 130px;
+    }
+
+    #home .welcome-content .rectangle {
         width: 80%;
         height: 150px;
         max-height: 100%;
         bottom: -100px;
     }
 
-    .welcome-content .rectangle .name {
+    #home .welcome-content .rectangle .name {
         font-size: 18px;
         top: 30px;
     }
 
-    .welcome-content .rectangle .description {
+    #home .welcome-content .rectangle .description {
         font-size: 12px;
         top: 54px;
     }
 
-    .welcome-content .rectangle .main-btn {
+    #home .welcome-content .rectangle .main-btn {
         font-size: 14px;
         height: 40px;
         width: 200px;
@@ -564,26 +576,30 @@
 }
 
 @media (max-width: 400px) {
-    .welcome-content .rectangle {
+    #home .welcome-content {
+        margin-bottom: 180px;
+    }
+
+    #home .welcome-content .rectangle {
         width: 90%;
         height: 170px;
         bottom: -140px;
         max-height: unset;
     }
 
-    .welcome-content .rectangle .name {
+    #home .welcome-content .rectangle .name {
         font-size: 18px;
         top: 25px;
         width: 200px;
         text-align: center;
     }
 
-    .welcome-content .rectangle .description {
+    #home .welcome-content .rectangle .description {
         font-size: 12px;
         top: 75px;
     }
 
-    .welcome-content .rectangle .main-btn {
+    #home .welcome-content .rectangle .main-btn {
         font-size: 14px;
         height: 40px;
         width: 200px;
