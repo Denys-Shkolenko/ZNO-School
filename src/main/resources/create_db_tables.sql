@@ -8,7 +8,7 @@ CREATE TABLE users_table
 CREATE TABLE roles
 (
     id        SERIAL PRIMARY KEY,
-    role_name VARCHAR(50) NOT NULL
+    role_name VARCHAR(50) NOT NULL UNIQUE
 );
 
 -- Table for mapping user and role
