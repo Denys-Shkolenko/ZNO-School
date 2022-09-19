@@ -4,14 +4,14 @@ import javax.persistence.*;
 import java.util.Set;
 
 /**
- * Simple JavaBean object that represents a User.
+ * Simple JavaBean object that represents a Person(User).
  *
  * @author Denys Shkolenko
  * @version 1.0
  */
 @Entity
 @Table(name = "users_table")
-public class User {
+public class Person {
 
     @Id
     @Column(name = "id")
@@ -29,9 +29,9 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
-    public User() {}
+    public Person() {}
 
-    public User(String username, String userPassword, Set<Role> roles) {
+    public Person(String username, String userPassword, Set<Role> roles) {
         this.username = username;
         this.userPassword = userPassword;
         this.roles = roles;
@@ -71,7 +71,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Person{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", userPassword='" + userPassword + '\'' +

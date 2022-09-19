@@ -11,7 +11,7 @@ CREATE TABLE roles
     role_name VARCHAR(50) NOT NULL UNIQUE
 );
 
--- Table for mapping user and role
+-- Table for mapping person and role
 CREATE TABLE user_and_role
 (
     user_id INT NOT NULL,

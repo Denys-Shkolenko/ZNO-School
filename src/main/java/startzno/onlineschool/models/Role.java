@@ -3,7 +3,7 @@ package startzno.onlineschool.models;
 import javax.persistence.*;
 
 /**
- * Simple JavaBean object that represents role of {@link User}.
+ * Simple JavaBean object that represents role of {@link Person}.
  *
  * @author Denys Shkolenko
  * @version 1.0
